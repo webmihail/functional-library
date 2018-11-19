@@ -9,3 +9,5 @@ function map(list, fn){
 
   return result;
 }
+
+module.exports = map;

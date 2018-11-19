@@ -9,3 +9,5 @@ function filter(list, fn){
 
   return result
 }
+
+module.exports = filter;

@@ -5,3 +5,5 @@ function forEach(list, fn){
     fn(list[i], i, list)
   }
 }
+
+module.exports = forEach;
