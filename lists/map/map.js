@@ -1,7 +1,11 @@
 'use strict'
 
 function map(list, fn){
-  for(let i = 0; 1 < list.length; i++){
-    fn(list[i], i, list)
+  let result = [];
+
+  for(let i = 0; i < list.length; i++){
+    result[i] = fn(list[i], i, list)
   }
+
+  return result;
 }
