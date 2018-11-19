@@ -1,0 +1,33 @@
+[
+  {
+    "name": "New Releases",
+    "movies": [
+      {
+        "id": 70111470,
+        "title": "Die Hard",
+        "boxart": "http://cdn-0.nflximg.com/images/2891/DieHard.jpg",
+        "url":"http://api.netflix.com/catalog/titles/movies/70111470",
+        "raiting": 4.0
+      },
+      {
+        "id": 654356453,
+        "title": "Bad Boys",
+        "boxart": "http://cdn-0.nflximg.com/images/2891/BadBoys.jpg",
+        "url":"http://api.netflix.com/catalog/titles/movies/654356453",
+        "raiting": 5.0
+      }
+    ]
+  },
+  {
+    "name": "Dramas",
+    "movies": [
+      {
+        "id": 65432445,
+        "title": "The Chamber",
+        "boxart": "http://cdn-0.nflximg.com/images/2891/TheChamber.jpg",
+        "url":"http://api.netflix.com/catalog/titles/movies/65432445",
+        "raiting": 4.0
+      }
+    ]
+  }
+]
