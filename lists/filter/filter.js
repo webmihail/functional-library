@@ -1,7 +1,5 @@
 'use strict'
 
-const movies = require('./data/movies.json')
-
 function filter(list, fn){
   let result = [];
 
@@ -11,7 +9,3 @@ function filter(list, fn){
 
   return result
 }
-
-let result = filter(movies, movie => movie.title === "Bad Boys")
-
-console.log(result);
