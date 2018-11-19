@@ -1,17 +1,10 @@
 'use strict'
+const map = require('./src/lists/map');
+const filter = require('./src/lists/filter');
+const movies = require('./data/movies.json');
 
-const movies = require('./data/movies.json')
-
-function filter(list, fn){
-  let result = [];
-
-  for(let i = 0; i < list.length; i++){
-    if (fn(list[i], i, list)) result.push(list[i]);
-  }
-
-  return result
-}
-
-let result = filter(movies, movie => movie.title === "Bad Boys")
+let result = map(
+  filter(movies, movie => movie.raiting === 4.0),
+  movie => movie.title);
 
 console.log(result);

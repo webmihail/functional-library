@@ -1,4 +1,4 @@
-const sortableArr = require('./sortableArr');
+const sortableArr = require('./index');
 
 describe('sortableArr', () => {
   test('function is declareted', () => {
