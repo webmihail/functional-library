@@ -1,8 +1,4 @@
 'use strict'
-const map = require('./src/lists/map');
-const filter = require('./src/lists/filter');
-const movies = require('./data/movie-lists.json')
-
 
 function reduce(list, fn, initialValue){
   let acc;
@@ -24,10 +20,3 @@ function reduce(list, fn, initialValue){
 
   return [acc];
 }
-
-let result = reduce(movies, (raiting, movie, list) => {
-  console.log(movie.movies[0].raiting)
-  return (raiting + movie.movies[0].raiting) / 2
-}, 0);
-
-console.log(result);
