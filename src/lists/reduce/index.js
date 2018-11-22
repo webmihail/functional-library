@@ -20,3 +20,5 @@ function reduce(list, fn, initialValue){
 
   return [acc];
 }
+
+module.exports = reduce;

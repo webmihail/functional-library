@@ -1,5 +1,5 @@
 'use strict'
-
+//метод фильтра массива с помощью callback и в результате получаем новый массив(отфильтрованый)
 function filter(list, fn){
   let result = [];
 

@@ -1,5 +1,5 @@
 'use strict'
-
+//метод копирования массива
 function flatten(lists){
 
   let result = [];

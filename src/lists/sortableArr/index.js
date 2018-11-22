@@ -1,3 +1,5 @@
+
+//sort - метод для сортировки массива, а sortBy - callback, который задает условия сортировки(по чем сортировать)
 module.exports = {
   sort(list,fn){
     return [...list].sort(fn);

@@ -1,33 +1,21 @@
 'use strict'
 const map = require('./src/lists/map');
 const filter = require('./src/lists/filter');
-const movies = require('./data/movie-lists.json')
+const movies = require('./data/movies.json');
+const bookmarks = require('./data/bookmarks.json')
+//метод для добавления данных из одного массива в другой
+function zip(left, right, fn){
+  let result = [];
 
-
-function reduce(list, fn, initialValue){
-  let acc;
-
-  if(initialValue !== undefined){
-    acc = initialValue;
-  }else acc = list[0];
-
-  if(initialValue || initialValue === 0){
-    for(let item of list){
-      acc = fn(acc, item, list);
-      console.log(acc)
-    }
-  }else{
-    for(let i = 1; i < list.length; i++){
-      acc = fn(acc, list[i], list);
-    }
+  for(let i = 0; i < Math.min(left.length, right.length); i++){
+    result.push(fn(left[i], right[i]));
   }
 
-  return [acc];
+  return result;
 }
 
-let result = reduce(movies, (raiting, movie, list) => {
-  console.log(movie.movies[0].raiting)
-  return (raiting + movie.movies[0].raiting) / 2
-}, 0);
+let result = join(movies, bookmarks, (movie, bookmark) => {
+  if()
+});
 
 console.log(result);
