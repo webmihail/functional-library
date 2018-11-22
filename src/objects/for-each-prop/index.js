@@ -1,5 +1,5 @@
 'use strict'
-
+//метод для переборуи ключей обьекта
 function forEachProp(obj, fn){
   let keys = Object.keys(obj);
 

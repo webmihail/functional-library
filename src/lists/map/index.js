@@ -1,5 +1,5 @@
 'use strict'
-
+//метод для того чтобы сделать что нибудь с массивом(в результате возвращает новый массив)
 function map(list, fn){
   let result = [];
 
@@ -9,3 +9,5 @@ function map(list, fn){
 
   return result;
 }
+
+module.exports = map;

@@ -1,5 +1,5 @@
 'use strict'
-
+//метод для выполнения ф-ции единожды
 function once(fn){
   let fnCalled = false;
 
